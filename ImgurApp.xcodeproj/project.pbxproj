@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		26035D98E477139BC5DB17BF /* Pods_ImgurApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6917BAFD6E7754FE38E23 /* Pods_ImgurApp.framework */; };
+		FE4F82E422E62710006C7A94 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82E322E62710006C7A94 /* MainCollectionViewController.swift */; };
+		FE4F82E822E62866006C7A94 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82E722E62866006C7A94 /* UIView+Helpers.swift */; };
+		FE4F82EE22E62AB0006C7A94 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82ED22E62AB0006C7A94 /* Album.swift */; };
+		FE4F82F022E62C52006C7A94 /* ImgurApiClient+GETImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82EF22E62C52006C7A94 /* ImgurApiClient+GETImage.swift */; };
+		FE4F82F222E62D61006C7A94 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82F122E62D61006C7A94 /* Image.swift */; };
+		FE4F82F422E62D76006C7A94 /* ImgurRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82F322E62D76006C7A94 /* ImgurRepository.swift */; };
+		FE4F82F622E63369006C7A94 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82F522E63369006C7A94 /* MainCollectionViewCell.swift */; };
 		FEAC46F222E6179100F0B311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC46F122E6179100F0B311 /* AppDelegate.swift */; };
-		FEAC46F422E6179100F0B311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC46F322E6179100F0B311 /* ViewController.swift */; };
 		FEAC46F722E6179100F0B311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46F522E6179100F0B311 /* Main.storyboard */; };
 		FEAC46F922E6179100F0B311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46F822E6179100F0B311 /* Assets.xcassets */; };
 		FEAC46FC22E6179100F0B311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46FA22E6179100F0B311 /* LaunchScreen.storyboard */; };
@@ -23,9 +29,15 @@
 		08B0E4D1FE4789E281CC1755 /* Pods-ImgurApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgurApp.debug.xcconfig"; path = "Target Support Files/Pods-ImgurApp/Pods-ImgurApp.debug.xcconfig"; sourceTree = "<group>"; };
 		0FF6917BAFD6E7754FE38E23 /* Pods_ImgurApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgurApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		908B365683F16C1237810E0A /* Pods-ImgurApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgurApp.release.xcconfig"; path = "Target Support Files/Pods-ImgurApp/Pods-ImgurApp.release.xcconfig"; sourceTree = "<group>"; };
+		FE4F82E322E62710006C7A94 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCollectionViewController.swift; path = ../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/MainCollectionViewController.swift; sourceTree = "<group>"; };
+		FE4F82E722E62866006C7A94 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Helpers.swift"; path = "../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/UIView+Helpers.swift"; sourceTree = "<group>"; };
+		FE4F82ED22E62AB0006C7A94 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Album.swift; path = ../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/Model/Album.swift; sourceTree = "<group>"; };
+		FE4F82EF22E62C52006C7A94 /* ImgurApiClient+GETImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImgurApiClient+GETImage.swift"; path = "../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ApiClient/ImgurApiClient+GETImage.swift"; sourceTree = "<group>"; };
+		FE4F82F122E62D61006C7A94 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Image.swift; path = ../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/Model/Image.swift; sourceTree = "<group>"; };
+		FE4F82F322E62D76006C7A94 /* ImgurRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImgurRepository.swift; path = ../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ImgurRepository.swift; sourceTree = "<group>"; };
+		FE4F82F522E63369006C7A94 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCollectionViewCell.swift; path = ../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FEAC46EE22E6179100F0B311 /* ImgurApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAC46F122E6179100F0B311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEAC46F322E6179100F0B311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEAC46F622E6179100F0B311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEAC46F822E6179100F0B311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAC46FB22E6179100F0B311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +77,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE4F82EC22E62AA6006C7A94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE4F82ED22E62AB0006C7A94 /* Album.swift */,
+				FE4F82F122E62D61006C7A94 /* Image.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FEAC46E522E6179100F0B311 = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +108,18 @@
 		FEAC46F022E6179100F0B311 /* ImgurApp */ = {
 			isa = PBXGroup;
 			children = (
+				FE4F82EC22E62AA6006C7A94 /* Model */,
 				FEAC470922E61E8400F0B311 /* ApiClient */,
 				FEAC46F122E6179100F0B311 /* AppDelegate.swift */,
-				FEAC46F322E6179100F0B311 /* ViewController.swift */,
 				FEAC46F522E6179100F0B311 /* Main.storyboard */,
 				FEAC46F822E6179100F0B311 /* Assets.xcassets */,
 				FEAC46FA22E6179100F0B311 /* LaunchScreen.storyboard */,
 				FEAC46FD22E6179100F0B311 /* Info.plist */,
 				FEAC470722E61A1200F0B311 /* BuildConfiguration.swift */,
+				FE4F82E322E62710006C7A94 /* MainCollectionViewController.swift */,
+				FE4F82E722E62866006C7A94 /* UIView+Helpers.swift */,
+				FE4F82F322E62D76006C7A94 /* ImgurRepository.swift */,
+				FE4F82F522E63369006C7A94 /* MainCollectionViewCell.swift */,
 			);
 			path = ImgurApp;
 			sourceTree = "<group>";
@@ -104,6 +129,7 @@
 			children = (
 				FEAC470A22E61E8900F0B311 /* ImgurApiClient.swift */,
 				FEAC470B22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift */,
+				FE4F82EF22E62C52006C7A94 /* ImgurApiClient+GETImage.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -119,6 +145,7 @@
 				FEAC46EA22E6179100F0B311 /* Sources */,
 				FEAC46EB22E6179100F0B311 /* Frameworks */,
 				FEAC46EC22E6179100F0B311 /* Resources */,
+				C2CC283B3A040D7460B188BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C2CC283B3A040D7460B188BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImgurApp/Pods-ImgurApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImgurApp/Pods-ImgurApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImgurApp/Pods-ImgurApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,11 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEAC46F422E6179100F0B311 /* ViewController.swift in Sources */,
+				FE4F82E822E62866006C7A94 /* UIView+Helpers.swift in Sources */,
 				FEAC470C22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift in Sources */,
+				FE4F82E422E62710006C7A94 /* MainCollectionViewController.swift in Sources */,
 				FEAC470D22E6207600F0B311 /* ImgurApiClient.swift in Sources */,
 				FEAC46F222E6179100F0B311 /* AppDelegate.swift in Sources */,
+				FE4F82F422E62D76006C7A94 /* ImgurRepository.swift in Sources */,
 				FEAC470822E61A1200F0B311 /* BuildConfiguration.swift in Sources */,
+				FE4F82F622E63369006C7A94 /* MainCollectionViewCell.swift in Sources */,
+				FE4F82F022E62C52006C7A94 /* ImgurApiClient+GETImage.swift in Sources */,
+				FE4F82EE22E62AB0006C7A94 /* Album.swift in Sources */,
+				FE4F82F222E62D61006C7A94 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

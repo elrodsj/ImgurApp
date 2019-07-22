@@ -1,3 +1,28 @@
-PODFILE CHECKSUM: 30bab3b15ed7fc8c3fe2e2369054d2a2b4940d5b
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - PINCache (2.3)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+
+DEPENDENCIES:
+  - PINRemoteImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
+    - PINCache
+    - PINRemoteImage
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+
+PODFILE CHECKSUM: 47d773d1716b5d50049350032b83304bce9f6749
 
 COCOAPODS: 1.7.5
