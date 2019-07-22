@@ -14,6 +14,9 @@
 		FEAC46F922E6179100F0B311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46F822E6179100F0B311 /* Assets.xcassets */; };
 		FEAC46FC22E6179100F0B311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46FA22E6179100F0B311 /* LaunchScreen.storyboard */; };
 		FEAC470422E617D000F0B311 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FEAC470322E617D000F0B311 /* README */; };
+		FEAC470822E61A1200F0B311 /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC470722E61A1200F0B311 /* BuildConfiguration.swift */; };
+		FEAC470C22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC470B22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift */; };
+		FEAC470D22E6207600F0B311 /* ImgurApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC470A22E61E8900F0B311 /* ImgurApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FEAC46FB22E6179100F0B311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEAC46FD22E6179100F0B311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEAC470322E617D000F0B311 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FEAC470722E61A1200F0B311 /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BuildConfiguration.swift; path = ../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/BuildConfiguration.swift; sourceTree = "<group>"; };
+		FEAC470A22E61E8900F0B311 /* ImgurApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurApiClient.swift; sourceTree = "<group>"; };
+		FEAC470B22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImgurApiClient+GETAlbums.swift"; path = "../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ApiClient/ImgurApiClient+GETAlbums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				08B0E4D1FE4789E281CC1755 /* Pods-ImgurApp.debug.xcconfig */,
 				908B365683F16C1237810E0A /* Pods-ImgurApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,14 +87,25 @@
 		FEAC46F022E6179100F0B311 /* ImgurApp */ = {
 			isa = PBXGroup;
 			children = (
+				FEAC470922E61E8400F0B311 /* ApiClient */,
 				FEAC46F122E6179100F0B311 /* AppDelegate.swift */,
 				FEAC46F322E6179100F0B311 /* ViewController.swift */,
 				FEAC46F522E6179100F0B311 /* Main.storyboard */,
 				FEAC46F822E6179100F0B311 /* Assets.xcassets */,
 				FEAC46FA22E6179100F0B311 /* LaunchScreen.storyboard */,
 				FEAC46FD22E6179100F0B311 /* Info.plist */,
+				FEAC470722E61A1200F0B311 /* BuildConfiguration.swift */,
 			);
 			path = ImgurApp;
+			sourceTree = "<group>";
+		};
+		FEAC470922E61E8400F0B311 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				FEAC470A22E61E8900F0B311 /* ImgurApiClient.swift */,
+				FEAC470B22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift */,
+			);
+			path = ApiClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEAC46F422E6179100F0B311 /* ViewController.swift in Sources */,
+				FEAC470C22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift in Sources */,
+				FEAC470D22E6207600F0B311 /* ImgurApiClient.swift in Sources */,
 				FEAC46F222E6179100F0B311 /* AppDelegate.swift in Sources */,
+				FEAC470822E61A1200F0B311 /* BuildConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +359,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A96ECR98N;
+				IMGUR_API_BASE_URL = "https://api.imgur.com/3";
+				IMGUR_API_CLIENT_ID = 2d086962f60c89e;
 				INFOPLIST_FILE = ImgurApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,6 +380,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A96ECR98N;
+				IMGUR_API_BASE_URL = "https://api.imgur.com/3";
+				IMGUR_API_CLIENT_ID = 2d086962f60c89e;
 				INFOPLIST_FILE = ImgurApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

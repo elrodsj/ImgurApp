@@ -41,5 +41,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>BuildConfiguration</key>
+	<dict>
+		<key>IMGUR_API_CLIENT_ID</key>
+		<string>$(IMGUR_API_CLIENT_ID)</string>
+		<key>IMGUR_API_BASE_URL</key>
+		<string>$(IMGUR_API_BASE_URL)</string>
+	</dict>
 </dict>
 </plist>
