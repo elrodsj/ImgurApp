@@ -1,0 +1,6 @@
+#Imgur App
+
+
+##Installation
+
+This app uses cocoapods. Please run a `pod install` before building.
