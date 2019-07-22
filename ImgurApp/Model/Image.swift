@@ -25,4 +25,14 @@ struct Image {
         
         self.url = url
     }
+    
+    init(apiImage: GETAlbumImagesResponse.GETAlbumImagesResponse_Image) throws {
+        self.id = apiImage.id
+        
+        guard let url = URL(string: apiImage.link) else {
+            throw ImageError.invalidUrl
+        }
+        
+        self.url = url
+    }
 }

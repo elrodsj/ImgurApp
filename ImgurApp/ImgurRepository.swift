@@ -28,4 +28,15 @@ struct ImgurRepository {
             }
         }, failure: failure)
     }
+    
+    func getAlbumImages(albumHash: String, success: @escaping ([Image]) -> Void, failure: @escaping (Error) -> Void) {
+        self.apiClient.getAlbumImages(albumHash: albumHash, success: { (response) in
+            do {
+                let images = try response.data.map({ try Image(apiImage: $0) })
+                success(images)
+            } catch let error {
+                failure(error)
+            }
+        }, failure: failure)
+    }
 }

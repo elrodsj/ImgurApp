@@ -20,7 +20,7 @@ struct GETAlbumsResponse: Decodable {
     
     struct GETAlbumsResponse_Album: Decodable {
         let id: String
-        let title: String
+        let title: String?
         let cover: String?
     }
 }

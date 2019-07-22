@@ -12,8 +12,10 @@ import UIKit
 class MainCollectionViewController: UICollectionViewController {
     var albums = [Album]()
     
+    var selectedIndex: Int? = nil
+    
     override func viewDidLoad() {
-        ImgurRepository().getAlbums(username: "abc123", success: { (albums) in
+        ImgurRepository().getAlbums(username: "TheWorldIsComingToAnEnd", success: { (albums) in
             DispatchQueue.main.async { [weak self] in
                 self?.albums = albums
                 self?.collectionView.reloadData()
@@ -21,6 +23,20 @@ class MainCollectionViewController: UICollectionViewController {
         }) { (error) in
             print(error)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "albumImages",
+            let selectedIndex = self.selectedIndex {
+            let album = self.albums[selectedIndex]
+            let dest = segue.destination as! AlbumImagesCollectionViewController
+            dest.album = album
+        }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath.item
+        self.performSegue(withIdentifier: "albumImages", sender: self)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -10,7 +10,7 @@ import Foundation
 
 struct Album {
     let id: String
-    let title: String
+    let title: String?
     let coverId: String?
     
     init(apiAlbum: GETAlbumsResponse.GETAlbumsResponse_Album) {
