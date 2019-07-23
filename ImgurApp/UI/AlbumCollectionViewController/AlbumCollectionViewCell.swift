@@ -29,4 +29,9 @@ class AlbumCollectionViewCell: UICollectionViewCell {
             }
         }
     }
+    
+    override func prepareForReuse() {
+        self.titleLabel.text = ""
+        self.albumCoverImageView.image = nil
+    }
 }

@@ -18,4 +18,8 @@ class AlbumImageCollectionViewCell: UICollectionViewCell {
             self.imageView.pin_setImage(from: self.image.url)
         }
     }
+    
+    override func prepareForReuse() {
+        self.imageView.image = nil
+    }
 }

@@ -13,6 +13,8 @@ PINRemoteImage is used for asynchronous loading of images. It has PINCache and F
 
 When you start the app, a prompt will appear asking for a username. Once a username is input and the "View Albums" button is tapped, the albums for that user will load. You can select an album to see the images inside the album. You can then select an image to display it full screen. When displaying an image full screen you can pinch to zoom, double tap to toggle the min/max zoom, and single tap to show/hide the close button.
 
+Side note: Some albums do not have cover images. If this is the case, a gray box will appear in place of the cover image. Some test users I found online are: drbatookhan, chemistrydoc, & SlimJones123. No promises on their content, I just did some searches for people that have albums/images. Many users do not.
+
 ## Decisions
 
 ### ImgurApiClient
