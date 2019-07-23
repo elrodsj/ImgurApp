@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildConfiguration</key>
+	<dict>
+		<key>IMGUR_API_BASE_URL</key>
+		<string>$(IMGUR_API_BASE_URL)</string>
+		<key>IMGUR_API_CLIENT_ID</key>
+		<string>$(IMGUR_API_CLIENT_ID)</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -31,8 +38,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -41,12 +46,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>BuildConfiguration</key>
-	<dict>
-		<key>IMGUR_API_CLIENT_ID</key>
-		<string>$(IMGUR_API_CLIENT_ID)</string>
-		<key>IMGUR_API_BASE_URL</key>
-		<string>$(IMGUR_API_BASE_URL)</string>
-	</dict>
 </dict>
 </plist>

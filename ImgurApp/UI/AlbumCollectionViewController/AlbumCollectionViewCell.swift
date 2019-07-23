@@ -1,5 +1,5 @@
 //
-//  MainCollectionViewCell.swift
+//  AlbumCollectionViewCell.swift
 //  ImgurApp
 //
 //  Created by Jake Elrod on 7/22/19.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import PINRemoteImage
 
-class MainCollectionViewCell: UICollectionViewCell {
+class AlbumCollectionViewCell: UICollectionViewCell {
  
     @IBOutlet weak var albumCoverImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

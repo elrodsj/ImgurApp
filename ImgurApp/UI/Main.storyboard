@@ -24,12 +24,98 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zod-lb-3Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="21"/>
+            <point key="canvasLocation" x="51" y="21"/>
+        </scene>
+        <!--Change Username View Controller-->
+        <scene sceneID="bsB-Hg-kKM">
+            <objects>
+                <viewController id="oWS-Al-Ybq" customClass="ChangeUsernameViewController" customModule="ImgurApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PDV-cN-JHv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayN-cJ-Oih">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gmc-Cx-D8r">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbY-eI-xqf">
+                                            <rect key="frame" x="41.5" y="378" width="331" height="140"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxh-eL-Voc">
+                                                    <rect key="frame" x="32" y="32" width="267" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="hKN-11-Q7M"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybM-hf-YJ7">
+                                                    <rect key="frame" x="121" y="94" width="89" height="30"/>
+                                                    <state key="normal" title="View Albums"/>
+                                                    <connections>
+                                                        <action selector="viewAlbumsTapped:" destination="oWS-Al-Ybq" eventType="touchUpInside" id="9XE-FR-kf5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ybM-hf-YJ7" secondAttribute="bottom" constant="16" id="GA9-tr-sDe"/>
+                                                <constraint firstItem="lxh-eL-Voc" firstAttribute="leading" secondItem="KbY-eI-xqf" secondAttribute="leading" constant="32" id="L0A-Yw-J3T"/>
+                                                <constraint firstItem="ybM-hf-YJ7" firstAttribute="top" secondItem="lxh-eL-Voc" secondAttribute="bottom" constant="22" id="Obd-lq-ysT"/>
+                                                <constraint firstAttribute="trailing" secondItem="lxh-eL-Voc" secondAttribute="trailing" constant="32" id="T2h-hO-0N6"/>
+                                                <constraint firstItem="lxh-eL-Voc" firstAttribute="top" secondItem="KbY-eI-xqf" secondAttribute="top" constant="32" id="UK8-4h-hOD"/>
+                                                <constraint firstItem="ybM-hf-YJ7" firstAttribute="centerX" secondItem="KbY-eI-xqf" secondAttribute="centerX" id="cw5-uw-O0X"/>
+                                                <constraint firstItem="lxh-eL-Voc" firstAttribute="centerX" secondItem="KbY-eI-xqf" secondAttribute="centerX" id="qXX-eB-rO5"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KbY-eI-xqf" firstAttribute="centerY" secondItem="gmc-Cx-D8r" secondAttribute="centerY" id="9dG-A7-cEK"/>
+                                        <constraint firstItem="KbY-eI-xqf" firstAttribute="centerX" secondItem="gmc-Cx-D8r" secondAttribute="centerX" id="eul-ta-CRj"/>
+                                        <constraint firstItem="KbY-eI-xqf" firstAttribute="width" secondItem="gmc-Cx-D8r" secondAttribute="width" multiplier="0.8" id="o6z-3i-YAC"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mu4-Zf-6ss" appends="YES" id="3L3-b6-asg"/>
+                                </connections>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ayN-cJ-Oih" firstAttribute="leading" secondItem="PDV-cN-JHv" secondAttribute="leading" id="ITt-yY-v3y"/>
+                            <constraint firstAttribute="top" secondItem="ayN-cJ-Oih" secondAttribute="top" id="RYw-iP-yUf"/>
+                            <constraint firstItem="ayN-cJ-Oih" firstAttribute="bottom" secondItem="PDV-cN-JHv" secondAttribute="bottom" id="Xff-OS-YeW"/>
+                            <constraint firstAttribute="trailing" secondItem="ayN-cJ-Oih" secondAttribute="trailing" id="yuw-UD-6Fr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vEH-zn-6Fs"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="usernameTextField" destination="lxh-eL-Voc" id="I6D-F2-Pxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7y-Vv-jUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mu4-Zf-6ss">
+                    <connections>
+                        <action selector="viewTapped:" destination="oWS-Al-Ybq" id="UUu-Yq-Uy9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="-648.21428571428567"/>
         </scene>
         <!--Album-->
         <scene sceneID="Cdy-tS-XoK">
             <objects>
-                <collectionViewController id="vgk-bj-jXr" customClass="MainCollectionViewController" customModule="ImgurApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="vgk-bj-jXr" customClass="AlbumCollectionViewController" customModule="ImgurApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ksx-fV-oai">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +127,7 @@
                             <inset key="sectionInset" minX="8" minY="16" maxX="8" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="albumCell" id="A2H-OR-c23" customClass="MainCollectionViewCell" customModule="ImgurApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="albumCell" id="A2H-OR-c23" customClass="AlbumCollectionViewCell" customModule="ImgurApp" customModuleProvider="target">
                                 <rect key="frame" x="41" y="16" width="332" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -114,7 +200,13 @@
                             <outlet property="delegate" destination="vgk-bj-jXr" id="JlN-39-Gl7"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Album" id="l4Q-iC-KBQ"/>
+                    <navigationItem key="navigationItem" title="Album" id="l4Q-iC-KBQ">
+                        <barButtonItem key="rightBarButtonItem" image="search" landscapeImage="search" id="vUb-Yg-eHI">
+                            <connections>
+                                <segue destination="oWS-Al-Ybq" kind="presentation" identifier="changeUsername" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="3TS-Jc-eaK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="hv7-1b-f3N" kind="show" identifier="albumImages" id="l0W-TX-EmQ"/>
                     </connections>
@@ -205,10 +297,10 @@
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eec-3t-sQj">
-                                <rect key="frame" x="358" y="60" width="40" height="40"/>
+                                <rect key="frame" x="368" y="60" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eec-3t-sQj" secondAttribute="height" multiplier="1:1" id="6JZ-He-Now"/>
-                                    <constraint firstAttribute="width" constant="40" id="9u9-M4-7T9"/>
+                                    <constraint firstAttribute="width" constant="30" id="9u9-M4-7T9"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="close"/>
@@ -252,6 +344,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="close" width="25" height="25"/>
+        <image name="close" width="512" height="512"/>
+        <image name="search" width="26" height="26"/>
     </resources>
 </document>

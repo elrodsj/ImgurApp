@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		26035D98E477139BC5DB17BF /* Pods_ImgurApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6917BAFD6E7754FE38E23 /* Pods_ImgurApp.framework */; };
 		FE09752B22E681A200055189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE09752A22E681A200055189 /* Main.storyboard */; };
-		FE09752C22E683BF00055189 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F830022E63C00006C7A94 /* MainCollectionViewController.swift */; };
-		FE09752D22E683C300055189 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82FF22E63C00006C7A94 /* MainCollectionViewCell.swift */; };
+		FE09752C22E683BF00055189 /* AlbumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F830022E63C00006C7A94 /* AlbumCollectionViewController.swift */; };
+		FE09752D22E683C300055189 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82FF22E63C00006C7A94 /* AlbumCollectionViewCell.swift */; };
 		FE09752E22E683C800055189 /* AlbumImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F830222E63C26006C7A94 /* AlbumImageCollectionViewCell.swift */; };
 		FE09752F22E683C800055189 /* AlbumImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F830322E63C26006C7A94 /* AlbumImagesCollectionViewController.swift */; };
 		FE4F82E822E62866006C7A94 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82E722E62866006C7A94 /* UIView+Helpers.swift */; };
@@ -20,6 +20,7 @@
 		FE4F82F422E62D76006C7A94 /* ImgurRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82F322E62D76006C7A94 /* ImgurRepository.swift */; };
 		FE4F82FC22E6383E006C7A94 /* ImgurApiClient+GETAlbumImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4F82FB22E6383E006C7A94 /* ImgurApiClient+GETAlbumImages.swift */; };
 		FE82084822E6B24900B0BB9D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE82084722E6B24900B0BB9D /* ImageViewController.swift */; };
+		FE82084A22E6C44400B0BB9D /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE82084922E6C44400B0BB9D /* ChangeUsernameViewController.swift */; };
 		FEAC46F222E6179100F0B311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC46F122E6179100F0B311 /* AppDelegate.swift */; };
 		FEAC46F922E6179100F0B311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46F822E6179100F0B311 /* Assets.xcassets */; };
 		FEAC46FC22E6179100F0B311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46FA22E6179100F0B311 /* LaunchScreen.storyboard */; };
@@ -40,11 +41,12 @@
 		FE4F82F122E62D61006C7A94 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Image.swift; path = ../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/Model/Image.swift; sourceTree = "<group>"; };
 		FE4F82F322E62D76006C7A94 /* ImgurRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImgurRepository.swift; path = ../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ImgurRepository.swift; sourceTree = "<group>"; };
 		FE4F82FB22E6383E006C7A94 /* ImgurApiClient+GETAlbumImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImgurApiClient+GETAlbumImages.swift"; path = "../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ApiClient/ImgurApiClient+GETAlbumImages.swift"; sourceTree = "<group>"; };
-		FE4F82FF22E63C00006C7A94 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
-		FE4F830022E63C00006C7A94 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		FE4F82FF22E63C00006C7A94 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE4F830022E63C00006C7A94 /* AlbumCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewController.swift; sourceTree = "<group>"; };
 		FE4F830222E63C26006C7A94 /* AlbumImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE4F830322E63C26006C7A94 /* AlbumImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumImagesCollectionViewController.swift; sourceTree = "<group>"; };
 		FE82084722E6B24900B0BB9D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/UI/ImageViewController.swift; sourceTree = "<group>"; };
+		FE82084922E6C44400B0BB9D /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangeUsernameViewController.swift; path = ../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/UI/ChangeUsernameViewController.swift; sourceTree = "<group>"; };
 		FEAC46EE22E6179100F0B311 /* ImgurApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAC46F122E6179100F0B311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAC46F822E6179100F0B311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,20 +100,21 @@
 			isa = PBXGroup;
 			children = (
 				FE4F830122E63C0E006C7A94 /* AlbumImagesCollectionViewController */,
-				FE4F82FE22E63BF9006C7A94 /* MainCollectionViewController */,
+				FE4F82FE22E63BF9006C7A94 /* AlbumCollectionViewController */,
 				FE09752A22E681A200055189 /* Main.storyboard */,
 				FE82084722E6B24900B0BB9D /* ImageViewController.swift */,
+				FE82084922E6C44400B0BB9D /* ChangeUsernameViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		FE4F82FE22E63BF9006C7A94 /* MainCollectionViewController */ = {
+		FE4F82FE22E63BF9006C7A94 /* AlbumCollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FE4F82FF22E63C00006C7A94 /* MainCollectionViewCell.swift */,
-				FE4F830022E63C00006C7A94 /* MainCollectionViewController.swift */,
+				FE4F82FF22E63C00006C7A94 /* AlbumCollectionViewCell.swift */,
+				FE4F830022E63C00006C7A94 /* AlbumCollectionViewController.swift */,
 			);
-			path = MainCollectionViewController;
+			path = AlbumCollectionViewController;
 			sourceTree = "<group>";
 		};
 		FE4F830122E63C0E006C7A94 /* AlbumImagesCollectionViewController */ = {
@@ -292,11 +295,12 @@
 				FEAC470D22E6207600F0B311 /* ImgurApiClient.swift in Sources */,
 				FE09752F22E683C800055189 /* AlbumImagesCollectionViewController.swift in Sources */,
 				FEAC46F222E6179100F0B311 /* AppDelegate.swift in Sources */,
-				FE09752C22E683BF00055189 /* MainCollectionViewController.swift in Sources */,
+				FE09752C22E683BF00055189 /* AlbumCollectionViewController.swift in Sources */,
 				FE82084822E6B24900B0BB9D /* ImageViewController.swift in Sources */,
 				FE09752E22E683C800055189 /* AlbumImageCollectionViewCell.swift in Sources */,
 				FE4F82F422E62D76006C7A94 /* ImgurRepository.swift in Sources */,
-				FE09752D22E683C300055189 /* MainCollectionViewCell.swift in Sources */,
+				FE82084A22E6C44400B0BB9D /* ChangeUsernameViewController.swift in Sources */,
+				FE09752D22E683C300055189 /* AlbumCollectionViewCell.swift in Sources */,
 				FEAC470822E61A1200F0B311 /* BuildConfiguration.swift in Sources */,
 				FE4F82F022E62C52006C7A94 /* ImgurApiClient+GETImage.swift in Sources */,
 				FE4F82EE22E62AB0006C7A94 /* Album.swift in Sources */,
