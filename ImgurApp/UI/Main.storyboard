@@ -112,7 +112,7 @@
             </objects>
             <point key="canvasLocation" x="1705.7971014492755" y="-648.21428571428567"/>
         </scene>
-        <!--Album-->
+        <!--Album Collection View Controller-->
         <scene sceneID="Cdy-tS-XoK">
             <objects>
                 <collectionViewController id="vgk-bj-jXr" customClass="AlbumCollectionViewController" customModule="ImgurApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,13 +194,45 @@
                                     <outlet property="titleLabel" destination="I9r-Tv-aAE" id="VQe-jB-KhH"/>
                                 </connections>
                             </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="noAlbums" id="xXK-3F-t2N">
+                                <rect key="frame" x="41" y="467" width="332" height="443"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="332" height="443"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noAlbums" translatesAutoresizingMaskIntoConstraints="NO" id="BlH-SD-YDw">
+                                            <rect key="frame" x="66" y="121.5" width="200" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="C9h-0k-UcU"/>
+                                                <constraint firstAttribute="width" secondItem="BlH-SD-YDw" secondAttribute="height" id="ONs-pp-Kzj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Albums Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By3-lu-McS">
+                                            <rect key="frame" x="98" y="353.5" width="136.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="BlH-SD-YDw" firstAttribute="centerY" secondItem="xXK-3F-t2N" secondAttribute="centerY" id="K2O-lp-2Mm"/>
+                                    <constraint firstItem="By3-lu-McS" firstAttribute="top" secondItem="BlH-SD-YDw" secondAttribute="bottom" constant="32" id="MfQ-Zb-spw"/>
+                                    <constraint firstItem="By3-lu-McS" firstAttribute="centerX" secondItem="xXK-3F-t2N" secondAttribute="centerX" id="Zga-V2-NoJ"/>
+                                    <constraint firstItem="BlH-SD-YDw" firstAttribute="centerX" secondItem="xXK-3F-t2N" secondAttribute="centerX" id="rs3-ks-oim"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </collectionViewCell>
                         </cells>
                         <connections>
                             <outlet property="dataSource" destination="vgk-bj-jXr" id="RgG-Xm-ubk"/>
                             <outlet property="delegate" destination="vgk-bj-jXr" id="JlN-39-Gl7"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Album" id="l4Q-iC-KBQ">
+                    <navigationItem key="navigationItem" id="l4Q-iC-KBQ">
                         <barButtonItem key="rightBarButtonItem" image="search" landscapeImage="search" id="vUb-Yg-eHI">
                             <connections>
                                 <segue destination="oWS-Al-Ybq" kind="presentation" identifier="changeUsername" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="3TS-Jc-eaK"/>
@@ -213,7 +245,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aU6-3s-mbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="21"/>
+            <point key="canvasLocation" x="895.6521739130435" y="20.758928571428569"/>
         </scene>
         <!--Album Images Collection View Controller-->
         <scene sceneID="KiO-C5-qza">
@@ -345,6 +377,7 @@
     </scenes>
     <resources>
         <image name="close" width="512" height="512"/>
+        <image name="noAlbums" width="512" height="512"/>
         <image name="search" width="26" height="26"/>
     </resources>
 </document>
