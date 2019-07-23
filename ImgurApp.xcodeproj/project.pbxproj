@@ -24,7 +24,7 @@
 		FEAC46F222E6179100F0B311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC46F122E6179100F0B311 /* AppDelegate.swift */; };
 		FEAC46F922E6179100F0B311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46F822E6179100F0B311 /* Assets.xcassets */; };
 		FEAC46FC22E6179100F0B311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAC46FA22E6179100F0B311 /* LaunchScreen.storyboard */; };
-		FEAC470422E617D000F0B311 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FEAC470322E617D000F0B311 /* README */; };
+		FEAC470422E617D000F0B311 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FEAC470322E617D000F0B311 /* README.md */; };
 		FEAC470822E61A1200F0B311 /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC470722E61A1200F0B311 /* BuildConfiguration.swift */; };
 		FEAC470C22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC470B22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift */; };
 		FEAC470D22E6207600F0B311 /* ImgurApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC470A22E61E8900F0B311 /* ImgurApiClient.swift */; };
@@ -52,7 +52,7 @@
 		FEAC46F822E6179100F0B311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAC46FB22E6179100F0B311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEAC46FD22E6179100F0B311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEAC470322E617D000F0B311 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		FEAC470322E617D000F0B311 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FEAC470722E61A1200F0B311 /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BuildConfiguration.swift; path = ../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/BuildConfiguration.swift; sourceTree = "<group>"; };
 		FEAC470A22E61E8900F0B311 /* ImgurApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurApiClient.swift; sourceTree = "<group>"; };
 		FEAC470B22E6201900F0B311 /* ImgurApiClient+GETAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImgurApiClient+GETAlbums.swift"; path = "../../../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ApiClient/ImgurApiClient+GETAlbums.swift"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		FEAC46E522E6179100F0B311 = {
 			isa = PBXGroup;
 			children = (
-				FEAC470322E617D000F0B311 /* README */,
+				FEAC470322E617D000F0B311 /* README.md */,
 				FEAC46F022E6179100F0B311 /* ImgurApp */,
 				FEAC46EF22E6179100F0B311 /* Products */,
 				BA964A47949E228390C785A6 /* Pods */,
@@ -233,7 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEAC470422E617D000F0B311 /* README in Resources */,
+				FEAC470422E617D000F0B311 /* README.md in Resources */,
 				FEAC46FC22E6179100F0B311 /* LaunchScreen.storyboard in Resources */,
 				FEAC46F922E6179100F0B311 /* Assets.xcassets in Resources */,
 				FE09752B22E681A200055189 /* Main.storyboard in Resources */,
