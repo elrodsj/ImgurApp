@@ -1,6 +1,11 @@
 # Imgur App
 
-
 ## Installation
 
 This app uses cocoapods. Please run a `pod install` before building.
+
+## Dependencies
+
+PINRemoteImage is used for asynchronous loading of images. It has PINCache and FLAnimatedImages as dependencies. PINRemoteImage & PINCache can be used for image caching if needed in the future.
+
+

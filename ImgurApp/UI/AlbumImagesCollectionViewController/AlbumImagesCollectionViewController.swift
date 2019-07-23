@@ -11,10 +11,14 @@ import UIKit
 
 class AlbumImagesCollectionViewController: UICollectionViewController {
     var album: Album? = nil
-    
     var images = [Image]()
+    var selectedIndex: Int? = nil
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = self.album?.title
+        
         if let album = self.album {
             ImgurRepository().getAlbumImages(albumHash: album.id, success: { (images) in
                 DispatchQueue.main.async { [weak self] in
@@ -27,8 +31,18 @@ class AlbumImagesCollectionViewController: UICollectionViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "image",
+            let selectedIndex = self.selectedIndex {
+            let image = self.images[selectedIndex]
+            let dest = segue.destination as? ImageViewController
+            dest?.image = image
+        }
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        self.selectedIndex = indexPath.item
+        self.performSegue(withIdentifier: "image", sender: self)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -46,9 +60,9 @@ extension AlbumImagesCollectionViewController: UICollectionViewDelegateFlowLayou
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //two albums per row with 8 margin on sides and in middle
-        let width = (UIScreen.main.bounds.width - 24) * 0.5 - 10
-        let height = width * 1.3
+        //two albums per row with 2 margin on sides and in middle
+        let width = (UIScreen.main.bounds.width - 6) * 0.5
+        let height = width
         return CGSize(width: width, height: height)
     }
 }

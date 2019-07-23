@@ -8,6 +8,7 @@
 
 import Foundation
 
+//this layer is here in case further abstraction between the api client and the ui is needed. if further caching or storage of the data needed to take place, it would happen here.
 struct ImgurRepository {
     
     let apiClient = ImgurApiClient()

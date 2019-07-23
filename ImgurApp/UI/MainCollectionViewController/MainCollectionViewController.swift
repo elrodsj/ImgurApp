@@ -15,6 +15,8 @@ class MainCollectionViewController: UICollectionViewController {
     var selectedIndex: Int? = nil
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         ImgurRepository().getAlbums(username: "TheWorldIsComingToAnEnd", success: { (albums) in
             DispatchQueue.main.async { [weak self] in
                 self?.albums = albums
@@ -55,7 +57,7 @@ extension MainCollectionViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         //two albums per row with 8 margin on sides and in middle
-        let width = (UIScreen.main.bounds.width - 24) * 0.5 - 10
+        let width = (UIScreen.main.bounds.width - 24) * 0.5
         let height = width * 1.3
         return CGSize(width: width, height: height)
     }

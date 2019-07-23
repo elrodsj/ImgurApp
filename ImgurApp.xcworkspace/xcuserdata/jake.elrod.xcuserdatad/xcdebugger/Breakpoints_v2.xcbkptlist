@@ -12,6 +12,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImgurApp/ApiClient/ImgurApiClient.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -28,6 +29,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImgurApp/ApiClient/ImgurApiClient.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -44,6 +46,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/MainCollectionViewController.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -60,6 +63,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/MainCollectionViewController.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -76,6 +80,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/ApiClient/ImgurApiClient+GETImage.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -92,6 +97,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/MainCollectionViewCell.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -108,6 +114,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/MainCollectionViewCell.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -124,6 +131,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../../System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/AlbumImagesCollectionViewController.swift"
+            timestampString = "0"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -140,6 +148,7 @@
                   moduleName = "ImgurApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/AlbumImagesCollectionViewController.swift"
+                  timestampString = "0"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -155,6 +164,7 @@
                   moduleName = "ImgurApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///System/Volumes/Data/Users/jake.elrod/GitHub/ImgurApp/ImgurApp/AlbumImagesCollectionViewController.swift"
+                  timestampString = "0"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -162,6 +172,118 @@
                   offsetFromSymbolStart = "168">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/UI/MainCollectionViewController/MainCollectionViewController.swift"
+            timestampString = "585546209.342225"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/UI/MainCollectionViewController/MainCollectionViewController.swift"
+            timestampString = "585546209.342332"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/UI/MainCollectionViewController/MainCollectionViewController.swift"
+            timestampString = "585546209.342425"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImgurApp.MainCollectionViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jake.elrod/GitHub/ImgurApp/ImgurApp/UI/MainCollectionViewController/MainCollectionViewController.swift"
+                  timestampString = "585532372.620455"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "71">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;ImgurApp.Album&gt;) -&gt; () in ImgurApp.MainCollectionViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ImgurApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jake.elrod/GitHub/ImgurApp/ImgurApp/UI/MainCollectionViewController/MainCollectionViewController.swift"
+                  timestampString = "585532372.622035"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "147">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/UI/AlbumImagesCollectionViewController/AlbumImagesCollectionViewController.swift"
+            timestampString = "585546209.342473"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImgurApp/UI/AlbumImagesCollectionViewController/AlbumImagesCollectionViewController.swift"
+            timestampString = "585546209.342519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "AlbumImagesCollectionViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
