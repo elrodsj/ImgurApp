@@ -1,5 +1,7 @@
 # Imgur App
 
+Compiled using Xcode 10.2.1 and only tested on simulator. I didn't have any devices on iOS 12 or below that I could use for testing since I've upgraded my iPhone and iPad to iOS 13.
+
 ## Installation
 
 This app uses cocoapods. To install cocoapods run `sudo gem install cocoapods`. Once cocoapods is installed, run a `pod install` before building.
